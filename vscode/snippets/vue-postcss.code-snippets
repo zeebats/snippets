@@ -1,0 +1,244 @@
+{
+	"BEM - Child": {
+		"scope": "vue-postcss",
+		"prefix": "__",
+		"description": "Add a BEM child",
+		"body": [
+			"&__${1:element} {",
+			"\t${0}",
+			"}"
+		]
+	},
+	"BEM - Child with root": {
+		"scope": "vue-postcss",
+		"prefix": "^__",
+		"description": "Add a BEM child with a ^root selector prefix",
+		"body": [
+			"^&__${1:element} {",
+			"\t${0}",
+			"}"
+		]
+	},
+	"BEM - Modifier": {
+		"scope": "vue-postcss",
+		"prefix": "mod",
+		"description": "Add a BEM modifier",
+		"body": [
+			"&--${1:modifier} {",
+			"\t${0}",
+			"}"
+		]
+	},
+	"BEM - State selector": {
+		"scope": "vue-postcss",
+		"prefix": ".is",
+		"description": "Add a BEM State selector",
+		"body": [
+			"&.is-${1:state} {",
+			"\t${0}",
+			"}"
+		]
+	},
+	"CSS - Psuedo class & Attribute - Disabled": {
+		"scope": "vue-postcss",
+		"prefix": "dis{",
+		"description": "Add a disabled psuedo class & attribute within a parent selector. The attribute is mostly for JavaScript frameworks",
+		"body": [
+			"&[disabled],",
+			"&:disabled {",
+			"\t${0}",
+			"}"
+		]
+	},
+	"CSS - Psuedo class & Attribute - Enabled": {
+		"scope": "vue-postcss",
+		"prefix": "ena{",
+		"description": "Add a enabled psuedo class & attribute within a parent selector. The attribute is mostly for JavaScript frameworks",
+		"body": [
+			"&:not([disabled]),",
+			"&:enabled {",
+			"\t${0}",
+			"}"
+		]
+	},
+	"CSS - Psuedo class - &:first-child": {
+		"scope": "vue-postcss",
+		"prefix": "f-c",
+		"description": "Add a :first-child psuedo class within a SCSS / PostCSS nested selector",
+		"body": [
+			"&:first-child {",
+			"\t${0}",
+			"}"
+		]
+	},
+	"CSS - Psuedo class - &:first-of-type": {
+		"scope": "vue-postcss",
+		"prefix": "f-o-t",
+		"description": "Add a :first-of-type psuedo class within a SCSS / PostCSS nested selector",
+		"body": [
+			"&:first-of-type {",
+			"\t${0}",
+			"}"
+		]
+	},
+	"CSS - Psuedo class - &:last-child": {
+		"scope": "vue-postcss",
+		"prefix": "l-c",
+		"description": "Add a :last-child psuedo class within a SCSS / PostCSS nested selector",
+		"body": [
+			"&:last-child {",
+			"\t${0}",
+			"}"
+		]
+	},
+	"CSS - Psuedo class - &:last-of-type": {
+		"scope": "vue-postcss",
+		"prefix": "l-o-t",
+		"description": "Add a :last-of-type psuedo class within a SCSS / PostCSS nested selector",
+		"body": [
+			"&:last-of-type {",
+			"\t${0}",
+			"}"
+		]
+	},
+	"CSS - Psuedo class - &:not(:first-child)": {
+		"scope": "vue-postcss",
+		"prefix": "nf-c",
+		"description": "Add a :first-child psuedo class within a SCSS / PostCSS nested selector, inside a :not() inversion",
+		"body": [
+			"&:not(:first-child) {",
+			"\t${0}",
+			"}"
+		]
+	},
+	"CSS - Psuedo class - &:not(:first-of-type)": {
+		"scope": "vue-postcss",
+		"prefix": "nf-o-t",
+		"description": "Add a :first-of-type psuedo class within a SCSS / PostCSS nested selector, inside a :not() inversion",
+		"body": [
+			"&:not(:first-of-type) {",
+			"\t${0}",
+			"}"
+		]
+	},
+	"CSS - Psuedo class - &:not(:last-child)": {
+		"scope": "vue-postcss",
+		"prefix": "nl-c",
+		"description": "Add a :last-child psuedo class within a SCSS / PostCSS nested selector, inside a :not() inversion",
+		"body": [
+			"&:not(:last-child) {",
+			"\t${0}",
+			"}"
+		]
+	},
+	"CSS - Psuedo class - &:not(:last-of-type)": {
+		"scope": "vue-postcss",
+		"prefix": "nl-o-t",
+		"description": "Add a :last-of-type psuedo class within a SCSS / PostCSS nested selector, inside a :not() inversion",
+		"body": [
+			"&:not(:last-of-type) {",
+			"\t${0}",
+			"}"
+		]
+	},
+	"CSS - Psuedo class - &:not(:nth-child(n))": {
+		"scope": "vue-postcss",
+		"prefix": "nn-c",
+		"description": "Add a :nth-child(n) psuedo class within a SCSS / PostCSS nested selector, inside a :not() inversion",
+		"body": [
+			"&:not(:nth-child(${1:n})) {",
+			"\t${0}",
+			"}"
+		]
+	},
+	"CSS - Psuedo class - &:not(:only-child)": {
+		"scope": "vue-postcss",
+		"prefix": "no-c",
+		"description": "Add a :only-child psuedo class within a SCSS / PostCSS nested selector, inside a :not() inversion",
+		"body": [
+			"&:not(:only-child) {",
+			"\t${0}",
+			"}"
+		]
+	},
+	"CSS - Psuedo class - &:nth-child(n)": {
+		"scope": "vue-postcss",
+		"prefix": "n-c",
+		"description": "Add a :nth-child(n) psuedo class within a SCSS / PostCSS nested selector",
+		"body": [
+			"&:nth-child(${1:n}) {",
+			"\t${0}",
+			"}"
+		]
+	},
+	"CSS - Psuedo class - &:only-child": {
+		"scope": "vue-postcss",
+		"prefix": "o-c",
+		"description": "Add a :only-child psuedo class within a SCSS / PostCSS nested selector",
+		"body": [
+			"&:only-child {",
+			"\t${0}",
+			"}"
+		]
+	},
+	"CSS - Psuedo class - :*-child": {
+		"scope": "vue-postcss",
+		"prefix": "_pc-c",
+		"description": "Add a :*-child psuedo class within a SCSS / PostCSS nested selector, optionally inside a :not() inversion",
+		"body": [
+			"&${1::not(}:${2:${3:last}-child}${4:)} {",
+			"\t${0}",
+			"}"
+		]
+	},
+	"CSS - Psuedo class - Hover & focus": {
+		"scope": "vue-postcss",
+		"prefix": "hocus",
+		"description": "Add the hover & focus psuedo state classes within a SCSS nested selector",
+		"body": [
+			"&:hover,",
+			"&:focus {",
+			"\t${0}",
+			"}"
+		]
+	},
+	"CSS - Psuedo class - State": {
+		"scope": "vue-postcss",
+		"prefix": "_pc-s",
+		"description": "Add a psuedo state class within a parent selector",
+		"body": [
+			"&:${1|active,visited|} {",
+			"\t${0}",
+			"}"
+		]
+	},
+	"CSS - Psuedo element": {
+		"scope": "vue-postcss",
+		"prefix": "::",
+		"description": "Add a psuedo element within a parent selector",
+		"body": [
+			"&::${1|after,before|} {",
+			"\t${2:content: '${3}';}",
+			"\t${0}",
+			"}"
+		]
+	},
+	"CSS Custom Property": {
+		"scope": "vue-postcss",
+		"prefix": "--",
+		"description": "Add a CSS Custom Property",
+		"body": [
+			"var(--${0})"
+		]
+	},
+	"CSS Custom media query": {
+		"scope": "vue-postcss",
+		"prefix": "@",
+		"description": "Add a CSS Custom media query",
+		"body": [
+			"@media (--${1:medium}) {",
+			"\t${0}",
+			"}"
+		]
+	}
+}

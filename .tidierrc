@@ -1,0 +1,15 @@
+{
+    "ignore": [
+        "**/build",
+        "**/workflow/export",
+        "node_modules"
+    ],
+    "files": {
+        "**/README*": "UPPER CASE.lc",
+        "**/LICENSE*": "UPPER CASE.lc",
+        "**/*": "kebab-case.lc"
+    },
+    "folders": {
+        "**/*": "kebab-case"
+    }
+}

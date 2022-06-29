@@ -1,0 +1,24 @@
+{
+	"Vue - Options API - Component data": {
+		"scope": "vue",
+		"prefix": "data",
+		"description": "Render component data for an Options API Vue SFC",
+		"body": [
+			"data: () => ({",
+			"\t${1:key}: ${2:value},",
+			"}),"
+		]
+	},
+	"Vue - PostCSS block with CSS Modules": {
+		"scope": "vue",
+		"prefix": "postcss",
+		"description": "Render an empty PostCSS block with CSS Modules enabled",
+		"body": [
+			"<style module lang=\"postcss\">",
+			"\t.${1:element} {",
+			"\t\t${0}",
+			"\t}",
+			"</style>"
+		]
+	}
+}
