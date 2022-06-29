@@ -1,0 +1,28 @@
+{
+	"Vue - CSS Modules - $style": {
+		"scope": "vue-html",
+		"prefix": "$style",
+		"description": "Render an singular CSS Modules declaration",
+		"body": [
+			"$style['${0:foo}']"
+		]
+	},
+	"Vue - CSS Modules - Multiple classes": {
+		"scope": "vue-html",
+		"prefix": ":classes",
+		"description": "Render an CSS Modules declaration with multiple classes",
+		"body": [
+			":class=\"[",
+			"\t$style['${0:foo}'],",
+			"]\""
+		]
+	},
+	"Vue - CSS Modules - Single class": {
+		"scope": "vue-html",
+		"prefix": ":class",
+		"description": "Render an CSS Modules declaration with a single class",
+		"body": [
+			":class=\"[$style['${0:foo}']]\""
+		]
+	}
+}

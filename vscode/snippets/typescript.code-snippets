@@ -1,0 +1,22 @@
+{
+	"IIFE": {
+		"scope": "typescript",
+		"prefix": ":iife",
+		"description": "Renders an immediately invoked function expression",
+		"body": [
+			"(() => {",
+			"\t${0}",
+			"})();"
+		]
+	},
+	"Object lookup": {
+		"scope": "typescript",
+		"prefix": ":lookup",
+		"description": "Renders an Object lookup table",
+		"body": [
+			"({",
+			"\t${1}: ${2},",
+			"}[${0}])"
+		]
+	}
+}

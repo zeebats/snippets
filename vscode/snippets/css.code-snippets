@@ -1,0 +1,20 @@
+{
+	"CSS Custom Property": {
+		"scope": "css",
+		"prefix": "--",
+		"description": "Add a CSS Custom Property",
+		"body": [
+			"var(--${0})"
+		]
+	},
+	"CSS Custom media query": {
+		"scope": "css",
+		"prefix": "@",
+		"description": "Add a CSS Custom media query",
+		"body": [
+			"@media (--${1:medium}) {",
+			"\t${0}",
+			"}"
+		]
+	}
+}

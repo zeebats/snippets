@@ -1,0 +1,23 @@
+{
+	"name": "snippets",
+	"version": "1.0.0",
+	"main": "index.js",
+	"scripts": {
+		"eslint:fix": "npm run eslint -- --fix",
+		"eslint": "eslint '{,.}**/{,.}*.{js,json,mjs,ts}'",
+		"schnipsel": "schnipsel"
+	},
+	"author": "@zeebats",
+	"license": "MIT",
+	"dependencies": {
+		"schnipsel": "0.0.3"
+	},
+	"devDependencies": {
+		"@commitlint/cli": "17.0.3",
+		"@commitlint/config-conventional": "17.0.3",
+		"@zeebats/eslint-config": "1.3.0",
+		"case-police": "0.5.3",
+		"lint-staged": "13.0.3",
+		"simple-git-hooks": "2.8.0"
+	}
+}
